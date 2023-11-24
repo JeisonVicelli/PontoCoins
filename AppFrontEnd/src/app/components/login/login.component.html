@@ -1,0 +1,49 @@
+<title>Login</title>
+
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <a href="./index.html">
+        <img src="../assets/image/logogaiaadesivo.jpg" style="width: 200px; height: 200px;" alt="logoGaia"/>
+      </a>
+
+      <h1>GaiaPontos</h1>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/gaiasktsurf/?locale=pt_BR" target="_blank"><img src="../assets/image/facebook-logo-png.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/gaiasktsurf/" target="_blank"><img src="../assets/image/instagram-logo.png" alt="Instagram"></a>
+      </div>
+    </header>
+
+
+    <ul class="menu">
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a href="#">Pontuação</a></li>
+        <li><a routerLink="/brindes"routerLinkActive="active">Cadastro de Brindes</a></li>
+        <li><a routerLink="/sobre"routerLinkActive="active">Sobre Nós</a></li>
+        <li><a href="#">Eventos</a></li>
+
+        <div class="login-and-register-buttons">
+          <a routerLink="/login">Login</a>
+          <a routerLink="/cliente">Cadastrar</a>
+        </div>
+      </ul>
+    </div>
+
+    <div class="center">
+      <div class="login-container">
+        <h2>Login</h2>
+        <form (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" [(ngModel)]="login.username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" [(ngModel)]="login.password" required />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>

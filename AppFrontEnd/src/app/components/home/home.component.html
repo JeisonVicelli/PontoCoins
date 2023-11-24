@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="home.component.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/js/bootstrap.min.js"></script>
+
+    <title>GaiaPontos</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="./index.html">
+          <img
+            src="../assets/image/logogaiaadesivo.jpg"
+            style="width: 200px; height: 200px"
+            alt="logoGaia"
+          />
+        </a>
+
+        <h1>GaiaPontos</h1>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/gaiasktsurf/?locale=pt_BR"
+            target="_blank"
+            ><img src="../assets/image/facebook-logo-png.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com/gaiasktsurf/" target="_blank"
+            ><img src="../assets/image/instagram-logo.png" alt="Instagram"
+          /></a>
+        </div>
+      </header>
+
+      <ul class="menu">
+        <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/pedido" routerLinkActive="active">Resgate</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Cliente</a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/cliente/cadastrar" routerLinkActive="active">Cadastrar</a></li>
+            <li><a routerLink="/cliente/listar">Listar</a></li>
+            <li><a routerLink="/cliente/editar">Editar</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Brinde</a>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/brinde/create">Cadastrar</a></li>
+            <li><a routerLink="/brindes/listar">Listar</a></li>
+            <li><a routerLink="/brindes/editar">Editar</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="/sobre" routerLinkActive="active">Sobre Nós</a></li>
+        <li><a href="#">Eventos</a></li>
+        <div class="login-and-register-buttons">
+          <a routerLink="/login">Login</a>
+          <a routerLink="/cliente/create" routerLinkActive="active">Cadastrar</a>
+        </div>
+      </ul>
+
+    </div>
+
+    <br />
+
+    <section class="content">
+      <h2>Com o GaiaPontos você só ganha!!!</h2>
+
+      <table>
+        <caption>
+          Descrição da Tabela
+        </caption>
+        <tr>
+          <th>Brinde Caneca</th>
+          <th>Brinde Chaveiro</th>
+        </tr>
+
+        <th>Brinde Camiseta</th>
+
+        <tr>
+          <td>
+            <img
+              src="../assets/image/caneca-ceramica-skate-nao-e-crime-skateboard-quebrado-skate.jpg"
+              style="width: 300px; height: 220px"
+              alt="BrindeCaneca"
+            />
+          </td>
+          <td>
+            <img
+              src="../assets/image/brindeChaveiro.jpeg"
+              style="width: 300px; height: 220px"
+              alt="brindeChaveiro"
+            />
+          </td>
+          <td>
+            <img
+              src="../assets/image/BrindeCamiseta.jpg"
+              style="width: 300px; height: 220px"
+              alt="BrindeCamiseta"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>São vários modelos de canecas para você escolher.</td>
+          <td>São vários modelos de Chaveiros para você escolher.</td>
+          <td>
+            Descrição | É um dos protagonistas da série Jujutsu no Kaisen. Ele é
+            um feiticeiro amplamente reconhecido como o mais forte do mundo.
+          </td>
+        </tr>
+        <tr>
+          <td>Desenhos irados com temas de skate e surf.</td>
+          <td>Desenhos irados com temas de skate e surf.</td>
+          <td>Desenhos irados com temas de skate e surf.</td>
+        </tr>
+        <tr>
+          <td><span class="destaquePonto">32 PONTOS</span></td>
+          <td><span class="destaquePonto">14 PONTOS</span></td>
+          <td><span class="destaquePonto">56 PONTOS</span></td>
+        </tr>
+        <tr></tr>
+      </table>
+
+      <table>
+        <caption>
+          Descrição da Tabela
+        </caption>
+        <tr>
+          <th>Anya Forger</th>
+          <th>Levi Ackerman</th>
+          <th>Mirko</th>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="../assets/image/CartazCampeonatoGaia.jpeg"
+              style="width: 300px; height: 220px"
+              alt="CartazCampeonatoGaia"
+            />
+          </td>
+          <td>
+            <img
+              src="../assets/image/levi.webp"
+              style="width: 300px; height: 220px"
+              alt="levi"
+            />
+          </td>
+          <td>
+            <img
+              src="../assets/image/mirko.webp"
+              style="width: 300px; height: 220px"
+              alt="mirko"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Descrição | É uma dos quatro personagens principais de SPY x FAMILY
+            e filha adotiva de Loid Forger e Yor Forger.
+          </td>
+          <td>
+            Descrição | É o capitão do Esquadrão de Operações Especiais dentro
+            da Divisão de Reconhecimento, e é dito como ser o soldado mais forte
+            da humanidade.
+          </td>
+          <td>
+            Descrição | Rumi Usagiyama, também conhecida como Mirko, é uma
+            super-heroína profissional. Ocupa a 4ª no ranking de heróis.
+          </td>
+        </tr>
+        <tr>
+          <td>Sexo | Feminino.</td>
+          <td>Sexo | Masculino.</td>
+          <td>Sexo | Feminino.</td>
+        </tr>
+        <tr>
+          <td>Aniversário | 14 de outubro.</td>
+          <td>Aniversário | 27 de novembro.</td>
+          <td>Aniversário | 01 de março.</td>
+        </tr>
+        <tr></tr>
+      </table>
+
+      <br /><br /><br />
+    </section>
+
+    <footer class="footer">&copy; Copyright Anime Wiki</footer>
+    <script>
+      $(document).ready(function() {
+        $('.dropdown-toggle').dropdown();
+      });
+    </script>
+
+  </body>
+</html>

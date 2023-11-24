@@ -1,0 +1,73 @@
+<!-- SeuComponente.component.html -->
+
+<h6>{{ tituloFormulario }}</h6>
+<form [formGroup]="formularioTroca" (ngSubmit)="enviarFormulario()">
+
+  <div class="form-group">
+    <label>CPF</label>
+    <input
+      type="text"
+      class="form-control form-control-sm"
+      formControlName="cpf"
+    />
+  </div>
+  <div class="form-group">
+    <label>Cliente</label>
+    <input
+      type="text"
+      class="form-control form-control-sm"
+      formControlName="cliente"
+    />
+  </div>
+  <div class="form-group">
+    <label>Valor Pontos do cliente</label>
+    <input
+      type="text"
+      class="form-control form-control-sm"
+      formControlName="pontos"
+    />
+  </div>
+  <div class="form-group">
+    <label>Brinde</label>
+    <div class="d-flex">
+      <select
+        class="form-control form-control-sm"
+        formControlName="brinde"
+      >
+        <option *ngFor="let brinde of listaBrindes" [value]="brinde.id">{{ brinde.nome }}</option>
+      </select>
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" (click)="adicionarBrinde()">Adicionar</button>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Brindes Selecionados</label>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let brinde of brindesSelecionados">
+        {{ brinde.nome }} - {{ brinde.valorPontos }} pontos
+      </li>
+    </ul>
+  </div>
+  <div class="form-group">
+    <label>Valor Total da Troca</label>
+    <input
+      type="text"
+      class="form-control form-control-sm"
+      formControlName="total"
+
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div>
+        <button type="submit" class="btn btn-sm btn-outline-secondary" (click)="realizarTroca()">
+          Trocar Pontos por Brinde
+        </button>
+      </div>
+      <div class="col-6">
+        <button type="button" class="btn btn-sm btn-light" (click)="listarBrindes()">Listar Brindes</button>
+      </div>
+    </div>
+  </div>
+</form>
